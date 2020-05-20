@@ -20,10 +20,6 @@
     <meta name="twitter:image:alt" content="">
 
     <link rel="stylesheet" href="tachyons.css"/>
-
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
-    
-
 <style>
     /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -68,7 +64,6 @@ body, html {
 body {
   background-color: #fff;
   color: #3b4040;
-  font-family: 'Martel';
   font-size: 22px;
 
 }
@@ -77,23 +72,26 @@ a {
     color: #3b4040;
 }
 
-h1, h2, h3, h4. h5, h6, .serif {
-    font-family: 'Alice', serif;
-}
-
 .bg-psfc-red {
     background-color: #D2202F;
 }
 
-.border-top, .border-bottom {
-    height: 12px;
-    left: 12px;
-    right: 12px;
+.split-left, .split-right {
+    bottom: 0;
+    position: fixed;
+    top: 0;
 }
-.border-left, .border-right {
-    bottom: 12px;
-    top: 12px;
-    width: 12px;
+
+.split-left {
+    background-color:white;
+    left: 0;
+    width: 66.66%;
+}
+
+.split-right {
+    background-color: #D2202F;
+    right: 0;
+    width: 33.33%;
 }
 
 @media all and (min-with: 480px) {
@@ -113,45 +111,70 @@ h1, h2, h3, h4. h5, h6, .serif {
 
 </head>
 
-<body class="bg-psfc-red serif">
+<body class="bg-psfc-red sans-serif">
 
-    <header class="fixed-ns top-0 left-0 pa4 ma3 relative z-1 w-100-ns tc tl-ns">
-        <h1 class="f4">
-            <a href="/" class="link dim">
-                Logo
-            </a>
-        </h1>
-    </header>
+    <div class="split-left">
+        <div class="mw7 fr pa5 flex items-center vh-100">
+            <div>
+                <header class="mb3">
+                    <h1 class="f4">
+                        <a href="/" class="link dim">
+                            <img src="prosupplyfc-logo-color-filled.jpg" alt="ProSupplyFC" style="max-width: 320px;"/>
+                        </a>
+                    </h1>
+                </header>
 
-    <div class="measure center mt6-ns">
-
-        <section class="lh-copy">
-
-            <div class="flex-ns justify-around mb3 bg-white pa4 br4 mh4 mh0-ns">
-                <div class="w-70 w-20-ns lh-title mb3 mb0-ns center">
-                    Logo
-                </div>  
-
-                <div class="w-80-ns pl4-ns">
-                    <h2 class="f3 serif b">
-                        Content
-                    </h2>          
-                    <p class="mb4 black-70 f4 sans-serif">
-                        Here.
-                    </p>     
-                </div>
+                <section class="lh-copy f4">
+                        <p class="b mb5">
+                            Official, discounted football kits from the Premier League.
+                        </p>          
+                        <p class="black-70">
+                            Coming soon.
+                        </p>     
+                </section>
             </div>
-
-        </section>
-
-
-        <footer class="mb6 tc pa3 pv4 br2 ba bw1 mh4 mh0-ns lh-copy">
-            <p class="darker-pink f4">
-                Footer
-            </p>
-        </footer>     
+        </div>
     </div>
+    <div class="split-right">
+            <div class="mw5 fl pa5 flex items-center vh-100 f5">
+                <!-- Begin Mailchimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{}
+                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                <form action="https://prosupplyfc.us18.list-manage.com/subscribe/post?u=a5b2f9a4ecc4ce98628b89d09&amp;id=9911487673" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    
+                <div class="mc-field-group mb3">
+                    <label for="mce-FNAME" class="db mb2 white ttu tracked b f6">First Name</label>
+                    <input type="text" value="" name="FNAME" class="ba b--white bg-transparent pa2 white" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group mb3">
+                    <label for="mce-LNAME" class="db mb2 white ttu tracked b f6">Last Name</label>
+                    <input type="text" value="" name="LNAME" class="ba b--white bg-transparent pa2 white" id="mce-LNAME">
+                </div>
+                <div class="mc-field-group mb3">
+                    <label for="mce-EMAIL" class="db mb2 white ttu tracked b f6">Email Address</label>
+                    <input type="email" value="" name="EMAIL" class="ba b--white bg-transparent pa2 white" id="mce-EMAIL">
+                </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a5b2f9a4ecc4ce98628b89d09_9911487673" tabindex="-1" value=""></div>
+                    <div class="clear">
+                        <input type="submit" value="Keep up to date" name="subscribe" id="mc-embedded-subscribe" class="b pa3 input-reset white ba b--black bg-black pointer w-100 ttu tracked b f6">
+                    </div>
+                    </div>
+                </form>
+                </div>
 
+                <!--End mc_embed_signup-->                    
+            </div>
+    </div>
     
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164717998-1"></script>
 <script>
