@@ -85,13 +85,25 @@ a {
 .split-left {
     background-color:white;
     left: 0;
-    width: 66.66%;
+    width: 50%;
 }
 
 .split-right {
     background-color: #D2202F;
     right: 0;
-    width: 33.33%;
+    width: 50%;
+}
+
+.team-grid {
+    background: url(team-grid.png) repeat center center transparent;
+    background-size: contain;
+    bottom: 0;
+    left: 0;
+    opacity: 0.04;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
 }
 
 @media all and (min-with: 480px) {
@@ -114,7 +126,7 @@ a {
 <body class="bg-psfc-red sans-serif">
 
     <div class="split-left">
-        <div class="mw7 fr pa5 flex items-center vh-100">
+        <div class="mw6 fr pa5 flex items-center vh-100">
             <div>
                 <header class="mb3">
                     <h1 class="f4">
@@ -125,8 +137,8 @@ a {
                 </header>
 
                 <section class="lh-copy f4">
-                        <p class="b mb5">
-                            Official, discounted football kits from the Premier League.
+                        <p class="b mb3">
+                            The surplus Premier League kit store.
                         </p>          
                         <p class="black-70">
                             Coming soon.
@@ -134,9 +146,10 @@ a {
                 </section>
             </div>
         </div>
+        <div class="team-grid"></div>
     </div>
     <div class="split-right">
-            <div class="mw5 fl pa5 flex items-center vh-100 f5">
+            <div class="mw6 pa5 flex items-center vh-100 f5">
                 <!-- Begin Mailchimp Signup Form -->
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
@@ -144,7 +157,7 @@ a {
                     #mc_embed_signup .mc-field-group input, #mc-embedded-subscribe {
                         border-radius: 0;
                        margin: 0; 
-                       padding: 0;
+                       padding: 12px;
                     }
                </style>
                 <div id="mc_embed_signup">
@@ -153,7 +166,7 @@ a {
                     
                 <div class="mc-field-group mb3">
                     <label for="mce-FNAME" class="db mb2 white ttu tracked b f6">First Name</label>
-                    <input type="text" value="" name="FNAME" class="ba b--white bg-transparent pa2 white" id="mce-FNAME">
+                    <input type="text" value="" name="FNAME" class="ba b--white bg-transparent pa2 white w100" id="mce-FNAME">
                 </div>
                 <div class="mc-field-group mb3">
                     <label for="mce-LNAME" class="db mb2 white ttu tracked b f6">Last Name</label>
@@ -177,6 +190,7 @@ a {
 
                 <!--End mc_embed_signup-->                    
             </div>
+            <div class="team-grid"></div>
     </div>
     
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164717998-1"></script>
